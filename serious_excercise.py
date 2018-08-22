@@ -1,14 +1,24 @@
-m = (int(input("How tall are you?")))/100
-kg = int(input("How heavy are you?"))
-BMI = kg//(m*m)
-print("Your BMI is :", BMI)
-if BMI<16:
-    print("Severely underweight")
-elif BMI<18.5:
-    print("Underweight")
-elif BMI<25:
-    print("Normal")
-elif BMI<30:
-    print("Overweight")
-else:
-    print("Obese")
+shop_list = ["T-Shirt", "Sweater"]
+
+while True:
+    command = input("Welcome to our shop, what do you want (C, R, U, D)? ")
+    command = command.lower()
+    if command == "R" or command == "r":
+        print("Our items:", shop_list)
+    elif command == "C" or command == "c":
+        shop_list.append(input("Enter new item: "))
+        print("Our items:", shop_list)
+    elif command == "U" or command == "u":
+        Updateposition = int(input("Update position? "))
+        Update = Updateposition - 1
+        shop_list.pop(Update)
+        shop_list.insert(Update, input("New item? "))
+        print("Our items:", shop_list)
+    elif command == "D" or command == "d":
+        Updateposition = int(input("Delete position? "))
+        Update = Updateposition - 1
+        shop_list.pop(Update)
+        print("Our items:", shop_list)
+    else:
+        print("What?")
+        print("I do not know what you are talking about")

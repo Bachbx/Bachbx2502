@@ -1,23 +1,24 @@
 from turtle import *
-speed(0)
-hideturtle()
-width(3)
 
-for i in range(3):
-    color("blue")
-    forward(100)
-    left(120)
-for i in range(4):
-    color("red")
-    forward(100)
-    left(90)
-for i in range(5):
-    color("blue")
-    forward(100)
-    left(72)
-for i in range(6):
-    color("red")
-    forward(100)
-    left(60)
+width(0)
+
+color_list = ['red', 'blue', 'brown', 'yellow', 'grey']
+m = 0
+n = 3
+for c in color_list:
+    m = m + 180
+    color(c)
+    for i in range(n):
+        forward(100)
+        left(180 - (m / n))
+    n = n + 1
+
+
+
+
+
+
+
+
 
 mainloop()

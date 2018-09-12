@@ -1,3 +1,6 @@
+from combat import combat_round, combat_full
+from inventory import *
+
 player = {
     "NAME":"Tokuda",
     "CLASS":"JAV",
@@ -5,10 +8,11 @@ player = {
     "STR": 7,
     "DEF": 10,
     "LVL": 1,
-
+    "Luck": 50,
+    "AGI": 2,
 }
-cmd = input("Your command?")
 
+cmd = input("Your command?")
 if cmd == "stats":
     print("NAME:", player["NAME"])
     print("CLASS:", player["CLASS"])
@@ -16,6 +20,8 @@ if cmd == "stats":
     print("STRENGHT:", player["STR"])
     print("DEFENSE:", player["DEF"])
     print("LEVEL:", player["LVL"])
+    print("LUCK:", player["Luck"])
+    print("AGI:", player["AGI"])
 elif cmd == "here":
     print("Bạn đang ở trước cửa Techkids")
     print("Bạn có 2 lựa chọn")
@@ -42,6 +48,8 @@ elif cmd == "here":
             print("STRENGHT:", player["STR"])
             print("DEFENSE:", player["DEF"])
             print("LEVEL:", player["LVL"])
+            print("LUCK:", player["Luck"])
+            print("AGI:", player["AGI"])
         print("Bạn gặp 1 con Orc chưa trưởng thành")
         print("Bạn sẽ:")
         print("1. Chạy trốn")
@@ -58,42 +66,35 @@ elif cmd == "here":
             Orc ={
                 "NAME":" Orc",
                 "HP": 7,
-                "STR": 1,
+                "STR": 11,
                 "DEF": 2,
+                "Luck": 5,
+                "AGI": 2
 
             }
             print("OPPONENT:", Orc["NAME"])
             print("HP:", Orc["HP"])
             print("STENGHT:", Orc["STR"])
             print("DEFENSE:", Orc["DEF"])
+            print("LUCK:", Orc["Luck"])
+            print("AGI:", Orc["AGI"])
 
-            print("Bạn được đánh đầu tiên")
-            damage = player["STR"]-Orc["DEF"]
-            if damage > 0:
-                Orc["HP"] -= damage
-                print("Orc vừa mất", damage, "HP")
-                print("Orc còn ", Orc["HP"], "HP")
+            combat_full(player, Orc)
+            show_item(inventory)
 
-            print("Orc đánh bạn")
-            damage = Orc["STR"] - player["DEF"]
-            if damage > 0:
-                player["HP"] -= damage
-                print("Player vừa mất ", damage, "HP")
-            else:
-                print("Bạn không làm sao cả")
 
-            print("Bạn đánh Orc lượt 2")
 
-            damage = player["STR"] - Orc["DEF"]
-            if damage > 0:
-                Orc["HP"] -= damage
-                print("Orc còn ", Orc["HP"], "HP")
-            print("Orc đã bị tiêu diệt")
-            print("Bạn đã thắng")
-            print("Phần thưởng của bạn là một chuyến đi Nhật Bản miễn phí!!")
-            print("Xin chúc mừng!!!")
-            print("Vì bạn đã được chuyến đi nên trò chơi kết thúc")
-            print(" END GAME")
+
+
+
+
+
+
+
+
+
+
+
     else:
         print("Bạn sẽ không được chơi!!!")
 

@@ -1,0 +1,35 @@
+
+    h1{
+        color: red;
+    }
+     h2{
+         color: blue;
+     }
+
+
+     #heading-2{
+         color:olivedrab;
+         font-family: 'Cedarville Cursive', cursive;
+         font-size: 40px
+
+     }
+
+     .text-right{
+         text-align:right;
+     }
+
+     #background-ele{
+         height: 500px;
+         width: 100%;
+        background-color: lightgreen;
+
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6ysuSoN9P_naQCr4f3jGWS6qw9ZCMNBSMLUrc6pVXJm-rQjtZ");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .bg-lightgreen{
+        height: 1000px;
+        width: 100%;
+        background-color: lightgreen;
+    }

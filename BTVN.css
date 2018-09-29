@@ -1,0 +1,165 @@
+.w-1400px{
+    width: 1400px;
+}
+
+.w-150px{
+    width: 150px;
+}
+
+.w-99{
+    width: 99%;
+}
+
+.w-60{
+    width: 90%;
+}
+
+.w_100{
+    width: 100%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+.w-22px{
+    width: 22px;
+}
+
+.w-24{
+    width: 24.5%;
+}
+
+.h-30px{
+    height: 30px;
+}
+
+.h-40px{
+    height: 40px;
+}
+
+.h-50px{
+    height: 50px;
+}
+
+.h-1500px{
+    height: 1500px;
+}
+
+.h_830px{
+    height: 830px;
+}
+
+.h-100px{
+    height: 100px;
+}
+
+.h-200px{
+    height: 200px;
+}
+
+.h-32px{
+    height: 32px;
+}
+
+.h-450px{
+    height: 450px;
+}
+ .h-220px{
+     height: 220px;
+ }
+
+ .h-1120px{
+     height: 1120px;
+ }
+
+ .h-550px{
+     height: 550px;
+ }
+
+ .h-500px{
+     height: 550px;
+ }
+
+ .h-490px{
+     height: 490px;
+ }
+
+ .h-192px{
+     height: 192px;
+ }
+
+ .h-288px{
+     height: 288px;
+ }
+
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.container{
+    justify-content: space-between;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.flex-end-align{
+    align-items: flex-end;
+}
+
+.bg-pink{
+    background-color: pink;
+}
+ .bg-cyan{
+     background-color: cyan;
+ }
+
+ .bg-blue{
+     background-color: blue;
+ }
+
+ .bg-gray{
+     background-color: gray;
+ }
+
+ .bg-green{
+     background-color: green;
+ }
+
+ .bg-white{
+     background-color: white;
+ }
+
+ .bg-black{
+     background-color: black;
+ }
+
+ .bg-lightgreen{
+     background-color: lightgreen;
+ }
+
+ .bg-lightskyblue{
+     background-color: lightskyblue;
+ }
+
+ .bg-yellow{
+     background-color: yellow;
+ }
+
+ .mt-30px {
+    margin-top: 30px;
+}
+
+.mt-400px{
+    margin-top: 400px;
+}
+
+.font-darkslategray{
+    color: darkslategray;
+}
